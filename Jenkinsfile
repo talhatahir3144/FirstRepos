@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage('cleanup'){
             steps{
+                sh 'ls -lrt'
                 cleanWs()
             }
         }
